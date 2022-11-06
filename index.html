@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Puzzle Game</title>
+</head>
+
+<body>
+
+    <div id="puzzlebox">
+        <form id="choose-form">
+            <div class="input-box" id="input-box">
+                <label for="imageUpload" class="btn btn-outline-dark upload-label">
+                    Choose Img
+                </label>
+                <input type="file" name="image" id="imageUpload" accept=".png, .jpg, .jpeg" />
+            </div>
+        </form>
+        <canvas id="preview"></canvas>
+        <div id="gridbox" style="display: none;"></div>
+    </div>
+    <div id="puzzletiles" class="container">
+    </div>
+    <div class="text-center">
+        <p id="result"></p>
+    </div>
+    <div class="text-center">
+        <button id="start_reset" class="btn btn-success">Start</button>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
